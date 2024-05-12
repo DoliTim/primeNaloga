@@ -2,7 +2,7 @@
 #include <QGridLayout>
 #include <QColor>
 #include "prime.h"
-#include "square.h"
+#include "QLabel"
 
 MainWidget::MainWidget(QWidget *parent)
     : QWidget{parent}
@@ -10,15 +10,35 @@ MainWidget::MainWidget(QWidget *parent)
     QGridLayout *layout = new QGridLayout(this);
     for (int i = 1; i <= 100; ++i) {
         Prime prime(i);
-        Square *square = new Square(this);
-        square->setText(QString::number(i));
-        if (prime.Prime::isPrime(i))
-            square->setColor(Qt::blue);
-        else if (prime.Prime::isSemiPrime(i))
-            square->setColor(Qt::green);
-        else
-            square->setColor(Qt::red);
-        layout->addWidget(square, (i - 1) / 10, (i - 1) % 10);
+
+        QLabel *label = new QLabel(this);
+        label->setText(QString::number(i));
+
+        QFont font("Monospace", 10, QFont::Bold);
+        label->setFont(font);
+
+        Qt::Alignment alignment(Qt::AlignHCenter);
+        label->setAlignment(alignment);
+        label->setMargin(10);
+
+        if (prime.Prime::isPrime(i)) {
+            label->setStyleSheet("QLabel { \
+                                    background-color: blue; \
+                                    color: white \
+                                   }");
+        } else if (prime.Prime::isSemiPrime(i)) {
+            label->setStyleSheet("QLabel { \
+                                    background-color: green; \
+                                    color: white \
+                                   }");
+        } else {
+            label->setStyleSheet("QLabel { \
+                                    background-color: red; \
+                                    color: white \
+                                   }");
+        }
+
+        layout->addWidget(label, (i - 1) / 10, (i - 1) % 10);
     }
     setLayout(layout);
 }
