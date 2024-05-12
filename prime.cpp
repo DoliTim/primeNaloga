@@ -26,15 +26,11 @@ bool Prime::isPrime(unsigned int iN) const
 bool Prime::isSemiPrime(unsigned int iN) const
 {
     int iCnt = 0;
-    for (unsigned int iX = 2; iX * iX <= iN && iCnt < 2; ++iX) {
-        while ((iN % iX == 0)) {
+    for (unsigned int iX = 2; iX < iN; ++iX) {
+        while ((iN % iX == 0) && isPrime(iX)) {
             iN /= iX;
             ++iCnt;
         }
     }
-
-    if (iN > 1) {
-        iCnt++;
-    }
-    return iCnt == 2;
+    return iCnt + (iN > 1) == 2;
 }
