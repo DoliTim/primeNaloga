@@ -9,8 +9,10 @@ PrimeNaloga is a C++ application developed using the Qt framework. It provides a
 
 ## Screenshots
 
-![Screenshot1](path/to/screenshot1.png)
-![Screenshot2](path/to/screenshot2.png)
+![QT](https://github.com/DoliTim/primeNaloga/assets/121125226/4fec0822-9906-4d16-ba7d-6f9c27218eec)
+![prim](https://github.com/DoliTim/primeNaloga/assets/121125226/71b384df-7844-4708-907a-719e6dcb28aa)
+
+![Screenshot 2024-05-15 160605](https://github.com/DoliTim/primeNaloga/assets/121125226/885446db-1657-49c8-87a5-54c089c14e25)
 
 ## Prerequisites
 
