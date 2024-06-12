@@ -1,17 +1,26 @@
-# PrimeNaloga
-
-PrimeNaloga is QT-based web application designed to help users compute and visualize prime numbers efficiently. It allows users to input a range of numbers and receive a list of prime numbers within that range. The application is built using the Flask web framework and is optimized for performance and usability.
+PrimeNaloga is a C++ application developed using the Qt framework. It provides a tool for calculating and displaying prime numbers within a specified range. The application features a graphical user interface (GUI) created with Qt to enhance user interaction and visualization.
 
 ## Features
 
-- **Prime Number Computation**: Compute prime numbers within a specified range.
-- **Visualization**: Graphical representation of prime numbers.
-- **Performance**: Efficient algorithms for prime number calculation.
-- **User-Friendly Interface**: Clean and intuitive UI built with HTML/CSS and Flask.
+- **Prime Number Calculation**: Efficiently compute prime numbers within a user-defined range.
+- **Graphical User Interface**: Interactive GUI built with Qt for ease of use.
+- **Visualization**: Display prime numbers in a list and graphical format.
+- **Cross-Platform**: Runs on Windows, macOS, and Linux.
+
+## Screenshots
+
+![Screenshot1](path/to/screenshot1.png)
+![Screenshot2](path/to/screenshot2.png)
+
+## Prerequisites
+
+- **Qt**: Ensure you have Qt installed. You can download it from [Qt Downloads](https://www.qt.io/download).
+- **Qt Creator**: Recommended for building and running the project.
+- **C++ Compiler**: Compatible C++ compiler (e.g., GCC, Clang, MSVC).
 
 ## Installation
 
-Follow these steps to set up the PrimeNaloga project locally:
+### Using Qt Creator
 
 1. **Clone the Repository**:
     ```bash
@@ -19,26 +28,36 @@ Follow these steps to set up the PrimeNaloga project locally:
     cd primeNaloga
     ```
 
-2. **Create a Virtual Environment**:
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
-    ```
+2. **Open the Project**:
+    - Launch Qt Creator.
+    - Click on `File` -> `Open File or Project`.
+    - Navigate to the `primeNaloga` directory and open the `primeNaloga.pro` file.
 
-3. **Install Dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
+3. **Configure the Project**:
+    - Select your kit (e.g., Desktop Qt 6.5.1 GCC 64bit).
+    - Click `Configure Project`.
 
-4. **Run the Application**:
-    ```bash
-    flask run
-    ```
+4. **Build the Project**:
+    - Click on `Build` -> `Build Project "primeNaloga"`.
+    - Ensure there are no build errors.
 
-5. Open your browser and navigate to `http://127.0.0.1:5000` to view the application.
+5. **Run the Application**:
+    - Click on `Run` -> `Run Project "primeNaloga"`.
+    - The application window should open, allowing you to input ranges and compute primes.
 
 ## Usage
 
-- Enter the desired range of numbers in the input field.
-- Click on the "Compute Primes" button to generate and display the prime numbers within the given range.
-- Use the visualization tool to see a graphical representation of the computed primes.
+1. **Start the Application**: Follow the steps in the installation section to build and run the application.
+2. **Enter Range**: Input the range for which you want to calculate prime numbers.
+3. **Calculate Primes**: Click the "Calculate" button to compute and display the prime numbers.
+4. **Visualization**: View the list of prime numbers or use the graphical visualization feature.
+
+## Development
+
+### Project Structure
+
+- **src/**: Source files.
+- **include/**: Header files.
+- **ui/**: User interface files.
+- **tests/**: Unit tests.
+
