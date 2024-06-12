@@ -1,15 +1,3 @@
-
-To create a comprehensive README.md for the PrimeNaloga repository, I'll follow these steps:
-
-Project Description: Summarize the purpose and scope of the project.
-Features: List key features.
-Installation: Provide steps to set up the project locally.
-Usage: Describe how to use the application.
-Development: Instructions for contributing or further development.
-License: Specify the licensing information.
-Contact: Provide contact details for support or queries.
-Based on the provided GitHub repository, here's a draft for your README.md:
-
 PrimeNaloga
 PrimeNaloga is a Python-based web application designed to help users compute and visualize prime numbers efficiently. It allows users to input a range of numbers and receive a list of prime numbers within that range. The application is built using the Flask web framework and is optimized for performance and usability.
 
