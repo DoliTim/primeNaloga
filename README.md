@@ -1,6 +1,6 @@
 # PrimeNaloga
 
-PrimeNaloga is a Python-based web application designed to help users compute and visualize prime numbers efficiently. It allows users to input a range of numbers and receive a list of prime numbers within that range. The application is built using the Flask web framework and is optimized for performance and usability.
+PrimeNaloga is QT-based web application designed to help users compute and visualize prime numbers efficiently. It allows users to input a range of numbers and receive a list of prime numbers within that range. The application is built using the Flask web framework and is optimized for performance and usability.
 
 ## Features
 
